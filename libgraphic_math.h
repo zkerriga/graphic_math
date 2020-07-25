@@ -15,9 +15,6 @@
 
 # include "math.h"
 
-# define TRUE 1
-# define FALSE 0
-
 typedef char	t_bool;
 
 typedef struct	s_vec3
