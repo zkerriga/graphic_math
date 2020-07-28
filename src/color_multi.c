@@ -14,13 +14,13 @@
 
 /*
 ** The function multiply the values for all channels from two vectors.
-** The Function returns a pointer to dest without changes.
+** The Function returns a pointer to `dest` without changes.
 */
 
-t_rgbvec	*color_multi(t_rgbvec *dest, t_rgbvec one, t_rgbvec two)
+t_rgbvec	*color_multi(t_rgbvec *dest, t_rgbvec *col1, t_rgbvec *col2)
 {
-	dest->r = one.r * two.r;
-	dest->g = one.g * two.g;
-	dest->b = one.b * two.b;
+	dest->r = col1->r * col2->r;
+	dest->g = col1->g * col2->g;
+	dest->b = col1->b * col2->b;
 	return (dest);
 }

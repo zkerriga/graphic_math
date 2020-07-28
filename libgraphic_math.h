@@ -40,16 +40,18 @@ typedef struct	s_rgbvec
 	float		b;
 }				t_rgbvec;
 
-int			color_to_int(t_rgbvec color);
-t_rgbvec	*color_sum(t_rgbvec *dest, t_rgbvec one, t_rgbvec two);
-t_rgbvec	*color_multi(t_rgbvec *dest, t_rgbvec one, t_rgbvec two);
+int			color_to_int(t_rgbvec *color);
+t_rgbvec	*color_sum(t_rgbvec *dest, t_rgbvec *col1, t_rgbvec *col2);
+t_rgbvec	*color_multi(t_rgbvec *dest, t_rgbvec *col1, t_rgbvec *col2);
 
 t_bool		fbetween(float nbr, float down, float up);
 float		maxf(float one, float two);
 float		rad_to_deg(float radians);
 
 float		module(t_vec3 *vec);
+float		module_sqr(t_vec3 *vec);
 float		modulep(t_point *a, t_point *b);
+float		modulep_sqr(t_point *a, t_point *b);
 t_vec3		*normalize(t_vec3 *vector);
 
 void		vset(t_vec3 *dest, float x, float y, float z);

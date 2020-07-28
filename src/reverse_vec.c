@@ -12,6 +12,10 @@
 
 #include "libgraphic_math.h"
 
+/*
+** Inverts the vector.
+*/
+
 t_vec3	*reverse_vec(t_vec3 *vector)
 {
 	vector->x *= -1.f;
